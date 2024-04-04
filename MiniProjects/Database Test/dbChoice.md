@@ -30,3 +30,38 @@ Résumé :
 Le grand gagnant :
 
 # 🏆🏆MySQL🏆🏆
+
+
+
+
+
+
+# Configuration MySQL
+### Data Directory
+Choisir un dossier...
+### Type and Networking
+Étant donné que l'application y accédant est sur le même PC, je n'ai pas d'utilité à ouvrir le port du firewall.
+La configuration par défaut du Port et X Protocol Port (utilisé pour le protocol X, un protocol de communication interne entre les composants MySQL) est très bien.
+Le choix de communication avec la base de donnée peut être via des named pipe (plus rapide que connexion tcp/ip) ou encore de la mémoire partagée (encore plus rapide que named pipe) ou du tcp/ip. N'ayant pas besoin de performance pour cette application je choisis de rester en tcp/ip.
+### Accounts and Roles
+Root Password : là où je m'y attends
+MySQL User : 
+Name : BackendReadWrite
+Role : DB Manager
+Password : là où je m'y attends
+### Windows Service
+No
+### Server File Permissions
+Do you want MySQL Configurator to update the server file permissions for you ?
+Yes, grant full access to the user running the Windows Service (if applicable) and the administrators group only. Other users and groups will not have access. 🆗
+Yes, but let me review and configure the level of access. ❌
+No, I will manage the permissions after the server configuration. ❌
+Less overhead for configuration and my backend app can connect 🤷‍♂️
+### Logging Options
+None. Performance and Security is not a concern for this application.
+### Advanced Options
+Server ID : 1 (we don't care as we are not using binary logging).
+Table Name Case : Lower Case, the default. -> All table names are stored and compared in lowercase, regardless of how they were originally created.
+### Sample Databases 
+None.
+
