@@ -1,3 +1,4 @@
+// was the first file where I tested my functions and used as a playground.
 const users = require('./users-db.js');
 const co = require('./connect-db.js')
 
@@ -6,6 +7,8 @@ const co = require('./connect-db.js')
 // send the right messages for the right conversation, create conversation, update the authorized_list of users, verify a conversation is inside that authorized list for a given user
 // Talk with the front end, recognize and store a user session so that he does not have to login each time, send html files and messages of conversation, send profile images
 // Messy, used this file for my first tests with the database
+
+
 
 co.connectToDatabase().then((connection => 
     users.getAllFromUserID(connection, 2)
