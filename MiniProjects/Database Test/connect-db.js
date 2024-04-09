@@ -4,7 +4,7 @@
  * @exports {connectToDatabase, closeConnection, mysql} moduleExports - mysql is the entire mysql2 module.
  */
 const mysql = require('mysql2/promise');
-// TODO [AFTER THE PROJECT] Look if there are no equivalent to Django that allows to automatically manage the database with class definitions. I've heard about Expressjs that is a node framework but I've understood that it is smaller (means more manual configuration) than Django. Need to make my researches and find what is best to do db management quickly.
+// TODO [AFTER THE PROJECT] Look if there are no equivalent to Django that allows to automatically manage the database with class definitions (ORM). I've heard about Expressjs that is a node framework but I've understood that it is smaller (means more manual configuration) than Django. Need to make my researches and find what is best to do db management quickly.
 
 module.exports = {
   connectToDatabase,
@@ -16,7 +16,7 @@ module.exports = {
 // TODO FUTURE : I think I will need listenner thread(s) communicating with the front-end and 'maker' threads that communicate with the database. ❌
 // But for a start and simplicity I can just have one thread for all.   
 // TODO FUTURE - SECURITY : Configure and setup a secure ssl connection to the database. ❌
-// TODO FUTURE - CODE IMPROVMENT : Make the connection config private, why not inside a class as a private variable. DONE 🆗
+// TODO FUTURE - CODE IMPROVMENT : Make the connection config private, as an enviornment variable. DONE 🆗
 
 const CONNECTION_CONFIG = {
     host: 'localhost',
