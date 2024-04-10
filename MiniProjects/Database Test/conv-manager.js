@@ -69,7 +69,7 @@ async function createConversation(connection, requester, allowed_users = []) { /
         time_sent DATETIME NOT NULL,
         msg_sender VARCHAR(255) NOT NULL,
         msg_content TEXT,
-        conv_id INT UNIQUE
+        conv_id INT
     );`; // conv_id is not user input.
     let newConvExecRes;
     try {
