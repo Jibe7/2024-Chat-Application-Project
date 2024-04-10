@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="zIuZ13QG05fj6iQ1Wx_n" name="Page-1">
-        <mxGraphModel dx="1149" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1352" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -22,10 +22,10 @@
                 <mxCell id="11" value="SQL Database" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
                     <mxGeometry x="710" y="410" width="390" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="Table Utilisateurs (ID, identifiant, mot de passe, image de profile)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="11" vertex="1">
+                <mxCell id="12" value="Table Utilisateurs (ID, identifiant, mot de passe, image de profile) 🆗👌" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="11" vertex="1">
                     <mxGeometry y="30" width="390" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Table Conversation (id unique de messages msg_id, messages msg_content, meta data des messages (date d'envoi, envoyeur) sent_datetime, id unique de la conversation.&lt;br&gt;&lt;br&gt;&lt;br&gt;Table Conversation Manager contient tous les id des conversations, leur date de création, les utilisateurs autorisés, l'état de la conversation (active, inactive, supprimée)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="11" vertex="1">
+                <mxCell id="13" value="Table Conversation (id unique de messages msg_id, messages msg_content, meta data des messages (date d'envoi, envoyeur) sent_datetime, id unique de la conversation. 🆗👌&lt;br&gt;&lt;br&gt;&lt;br&gt;Table Conversation Manager contient tous les id des conversations, leur date de création, les utilisateurs autorisés, l'état de la conversation (active, inactive, supprimée) 🆗👌" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="11" vertex="1">
                     <mxGeometry y="70" width="390" height="170" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="3" edge="1">
@@ -46,7 +46,7 @@
                         <mxPoint x="450" y="380" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="20" value="&lt;h1&gt;Web App&lt;/h1&gt;&lt;p&gt;À ajouter :&lt;/p&gt;&lt;p&gt;- Une page de login, la possibilité de déconnexion, le maintien de la connexion et de l'authentification avec des cookies, notification de fin de session lorsque le navigateur est fermé&lt;/p&gt;&lt;p&gt;- La création de nouvelle discussion (possibilité de choisir quels utilisateurs ajouter à une conversation)&lt;/p&gt;&lt;p&gt;- La modification du contenu de la page à partir de JavaScript (chargement des messages de la conversation dans le 'feed', chargement des images du profil...)&lt;/p&gt;&lt;p&gt;- La mise à jour du contenu de la discussion au serveur et la récupération des nouveaux messages&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                <mxCell id="20" value="&lt;h1&gt;Web App (V)&lt;/h1&gt;&lt;p&gt;À ajouter :&lt;/p&gt;&lt;p&gt;- Une page de login, la possibilité de déconnexion, le maintien de la connexion et de l'authentification avec des cookies, notification de fin de session lorsque le navigateur est fermé&lt;/p&gt;&lt;p&gt;- La création de nouvelle discussion (possibilité de choisir quels utilisateurs ajouter à une conversation)&lt;/p&gt;&lt;p&gt;- La modification du contenu de la page à partir de JavaScript (chargement des messages de la conversation dans le 'feed', chargement des images du profil...)&lt;/p&gt;&lt;p&gt;- La mise à jour du contenu de la discussion au serveur et la récupération des nouveaux messages&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="40" y="890" width="260" height="350" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="11" target="10" edge="1">
@@ -58,11 +58,11 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="25" value="&lt;h1&gt;Web Serveur&lt;/h1&gt;&lt;p&gt;À ajouter :&lt;/p&gt;&lt;p&gt;- communication en temps réel entre plusieurs communiquant&lt;/p&gt;&lt;p&gt;- authentification des utilisateurs, maintient et fermeture des sessions&lt;/p&gt;&lt;p&gt;- mise à jour de la base de donnée&lt;/p&gt;&lt;p&gt;- récupération des données de la base de donnée&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                <mxCell id="25" value="&lt;h1&gt;Web Serveur (C)&lt;/h1&gt;&lt;p&gt;À ajouter :&lt;/p&gt;&lt;p&gt;- communication en temps réel entre plusieurs communiquant&lt;/p&gt;&lt;p&gt;- authentification des utilisateurs, maintient et fermeture des sessions&lt;/p&gt;&lt;p&gt;- mise à jour de la base de donnée&lt;/p&gt;&lt;p&gt;- récupération des données de la base de donnée&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="380" y="660" width="260" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="&lt;h1&gt;Base de donnée&lt;/h1&gt;&lt;p&gt;À ajouter :&lt;/p&gt;&lt;p&gt;- ajout de nouveaux utilisateurs&amp;nbsp;&lt;/p&gt;&lt;p&gt;- ajout de nouveaux messages&lt;/p&gt;&lt;p&gt;- ajout de nouvelles conversations&lt;/p&gt;&lt;p&gt;- envoie d'identifiant et de mot de passe, de photos de profils&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="690" y="750" width="260" height="240" as="geometry"/>
+                <mxCell id="26" value="&lt;h1&gt;Base de donnée (M)&lt;/h1&gt;&lt;p&gt;À ajouter :&lt;/p&gt;&lt;p&gt;- ajout de nouveaux utilisateurs 🆗👌&lt;/p&gt;&lt;p&gt;- ajout de nouveaux messages&amp;nbsp;&lt;/p&gt;&lt;p&gt;- ajout de nouvelles conversations EN COURS&lt;/p&gt;&lt;p&gt;- envoie d'identifiant et de mot de passe&amp;nbsp;&lt;/p&gt;🆗👌&lt;p&gt;- ajout et récupération de photos de profils ❌&amp;nbsp;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="740" width="260" height="240" as="geometry"/>
                 </mxCell>
                 <mxCell id="27" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="5" target="4" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">

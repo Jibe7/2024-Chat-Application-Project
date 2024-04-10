@@ -2,7 +2,7 @@
  * @module conversation
  * @description Database interaction for messages inside a given conversation, related tasks. 
  * Only few JS files should interact with the database using SQL queries, thus 'high-level' function should be implemented in other files/modules and rely on this one.
- * Allow to add, retrieve, delete messages inside the database. 
+ * Allow to add, retrieve, delete messages inside a conversation (represented as a table in mysql database). 
  * @exports { addNewMessage, retrieveMessageFromRange } moduleExports - 
  */
 

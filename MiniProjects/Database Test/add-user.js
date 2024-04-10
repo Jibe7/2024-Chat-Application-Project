@@ -58,7 +58,7 @@ async function AddUserToDatabase(username, password, connection = undefined) {
 // Expected behavior when the username does not exist or already exists. Have not tested yet with images and how to do with blob conversion.
 // const run = async () => {
 //     const conn = await co.connectToDatabase();
-//     // await AddUserToDatabase("JacobCollier", "B0TwSmrR3!Arkc", conn)
+//     await AddUserToDatabase("JacobCollier", "B0TwSmrR3!Arkc", conn)
 //     co.closeConnection(conn);
 // }
 
