@@ -1,12 +1,12 @@
 /**
  * @module remove-user
- * @description Allow to remove users from the database. 
+ * @description Allow to remove users from the database. Also exports a utility function that is used to get the user_id from a username.
  * It contains three functions : giveIDfromName, removeUserFromDatabaseWithID and removeUserFromDatabase which is built on top of the two others.
- * @exports {removeUserFromDatabase} moduleExports - 
+ * @exports {removeUserFromDatabase, giveIDfromName} moduleExports - 
  */
 const users = require('./users-db.js');
 const co = require('./connect-db.js')
-module.exports = { removeUserFromDatabase };
+module.exports = { removeUserFromDatabase, giveIDfromName };
 
 
 /**
