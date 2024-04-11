@@ -2,7 +2,7 @@
  * @module requestFactory
  * @description For this web chat application, the client will send requests that will be handled by the server. 
  * This module defines a class for instantiating requests.
- * @exports { requestHandler } moduleExports - 
+ * @exports { requestFactory } moduleExports - 
  */
 
 class requestFactory {

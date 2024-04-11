@@ -1,7 +1,7 @@
 /**
  * @module request
  * @description For this web chat application, the client will send requests that will be handled by the server. This module defines a class for the different type of requests that can be made and handled.
- * @exports { createConversation, updateAuthorizedUsers, getAuthorizedUsers } moduleExports - 
+ * @exports { Request, RegistrationRequest, LoginRequest, CreateConvRequest, SendMsgRequest, GetMsgRequest } moduleExports - 
  */
 
 class Request {

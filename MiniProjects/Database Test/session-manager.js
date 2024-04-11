@@ -1,6 +1,6 @@
 /**
  * @module session-manager
- * @description When requests have been handled, these requests certify (when they were sucessful) that the users was logged in or had access to certain conversations. In order not to query the database to often we will store these informations in a Singleton class instance defined in this module. 
+ * @description When requests have been handled, these requests certify (when they were sucessful) that the users was logged in or had access to certain conversations. In order not to query the database too often we will store these informations in a Singleton class instance defined in this module. 
  * @exports { SessionManager } moduleExports - 
  */
 
