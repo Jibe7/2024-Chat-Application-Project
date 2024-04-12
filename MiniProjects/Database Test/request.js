@@ -4,6 +4,10 @@
  * @exports { Request, RegistrationRequest, LoginRequest, CreateConvRequest, SendMsgRequest, GetMsgRequest } moduleExports - 
  */
 
+/**
+ * 
+ * @class This class represents a Request from a client.
+ */
 class Request {
     static currentSessions;
     type; // type of request
@@ -13,6 +17,14 @@ class Request {
     #uuid; // unique request id
     #state; // state of the request, was it fullfilled ?
 
+    /**
+     * 
+     * @param {Map} sessions - Provided by session-manager to check in cache if a session already had authorization to create conversations or send / retrieve messages from a given conversation.
+     * @param {String} requestType - Represent the type of request a client is making.  
+     * @param {Object} inputData - Type may vary depending on the request. It is the data associated to a given request, if the request is a registration it contains username and password. 
+     * @param {String} default_response - Type may vary depending on the request. It represents the response when the request fails.
+     * @param {String} uuid - Represent a unique identifier for the request. 
+     */
     constructor (sessions, requestType, inputData, default_response, uuid) {
         this.currentSessions = sessions;
         this.type = requestType;
