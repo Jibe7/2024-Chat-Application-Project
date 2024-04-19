@@ -1,0 +1,174 @@
+@import url(resetCSS.css);
+@font-face {
+    font-family: "Bauhaus 93 Regular";
+    src: url("./font/bauhaus-93/Bauhaus 93 Regular.ttf");
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    background-image: url(https://plus.unsplash.com/premium_photo-1681487683141-e72c5ccd94e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Bauhaus 93 Regular";
+    color: #0A243D;
+}
+
+
+/* They can be useful for accessbility reasons : */
+.required, legend { 
+    opacity: 0;
+    font-size: 1px;
+}
+
+.app-name {
+    margin-top: 200px;
+    text-align: center;
+    text-shadow: -20px 20px rgb(0 0 0 / 15%);
+}
+
+.log-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 30vw;
+    height: 80vh;
+    background-color: #1CA7E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: -20px 20px rgb(0 0 0 / 30%);
+}
+
+.app-title-on-form {
+    margin: 10% 0 60% 0;
+}
+
+.round-container {
+    margin-top: 15px;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.round {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 100%;
+    background-color: #365068;
+    margin: 0 10px 0 0;
+    box-shadow: -4px 4px rgb(0 0 0 / 30%);
+}
+
+#lgn-reg {
+    margin-top: 20px;
+    min-height: 30vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #9DE8FE;
+    border-radius: 20px;
+    border: none;
+    box-shadow: -10px 10px rgb(0 0 0 / 15%);
+}
+
+#frm-btn {
+    margin-top: 25px;
+    border: none;
+    width: 30vw;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#lgn-reg > label {
+    font-size: 25px;
+    margin: 10px 0 0 10%;
+    text-shadow: -2px 2px rgb(0 0 0 / 15%);
+}
+
+@media (max-width: 930px) {
+    #lgn-reg > label {
+        font-size: 20px;
+    }
+}
+
+input {
+    margin: 10px auto;
+    width: 80%;
+    height: 6vh;
+    border: none;
+    padding-left: 10px;
+}
+
+#lgn, #reg {
+    font-size: 1.7vh;
+    border-radius: 100%;
+    width: 7vh;
+    height: 7vh;
+    position: relative;
+    left: -2.6vw;
+    border: none;
+    background-color: #365068;
+    box-shadow: -4px 4px rgb(0 0 0 / 30%);
+} 
+
+#lgn:active, #reg:active {
+    border: 1px solid #365068;
+    background-color: #253747;
+    box-shadow: -2px 2px rgb(0 0 0 / 30%);
+}
+
+
+@media (max-width: 680px) {
+    form {
+        width: 85vw;
+    }
+
+    .landing-page {
+        display: grid;
+        grid-template-rows: 100vh;
+    }
+
+    .app-title, .decoration {
+        display: none;
+    }
+    
+    .log-form {
+        width: 100%;
+    }
+
+    #frm-btn {
+        justify-content: space-between;
+        width: 50vw;
+    }
+
+    .app-name {
+        font-size: 12vw;
+    }
+}
+
+
+@media (min-width: 680px) {
+
+    .app-name {
+        font-size: 6vw;
+    }
+
+    .landing-page {
+        display: grid;
+        grid-template-columns: 65vw 35vw;
+        grid-template-rows: 100vh;
+    }
+    
+    .app-title-on-form {
+        display: none;
+    }
+}
+
