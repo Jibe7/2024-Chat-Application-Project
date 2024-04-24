@@ -12,7 +12,7 @@
     getAllUserNamesAndIDs,
     getUserNameAndID} moduleExports - 
  */
-const connect = require('./connect-db.js');
+const connect = require('../high-level-modules/connect-db.js');
 
 module.exports = {
     getAllUserNames,

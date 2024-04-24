@@ -6,8 +6,8 @@
  * @exports { addNewMessage, retrieveMessageFromRange, getLastMessageIndex } moduleExports - 
  */
 
-const date = require('dayjs');
-const co = require('./connect-db.js');
+const date = require('../dayjs');
+const co = require('../high-level-modules/connect-db');
 
 module.exports = { addNewMessage, retrieveMessageFromRange, getLastMessageIndex };
 

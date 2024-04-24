@@ -3,9 +3,9 @@
  * @description Allow to add users to the database. Contains only one big function.
  * @exports {AddUserToDatabase} moduleExports 
  */
-const users = require('./users-db.js');
+const users = require('../low-level-modules/users-db.js');
 const co = require('./connect-db.js');
-const crypt = require('./crypt.js')
+const crypt = require('../low-level-modules/crypt.js')
 
 module.exports = { AddUserToDatabase };
 

@@ -3,7 +3,7 @@
  * @description Provide functions to access the MySQL database. Possess the database configuration with env variables.
  * @exports {connectToDatabase, closeConnection, mysql} moduleExports - mysql is the entire mysql2 module.
  */
-const mysql = require('mysql2/promise');
+const mysql = require('../mysql2/promise');
 // TODO [AFTER THE PROJECT] Look if there are no equivalent to Django that allows to automatically manage the database with class definitions (ORM). I've heard about Expressjs that is a node framework but I've understood that it is smaller (means more manual configuration) than Django. Need to make my researches and find what is best to do db management quickly.
 
 module.exports = {

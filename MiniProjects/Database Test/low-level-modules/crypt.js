@@ -3,7 +3,7 @@
  * @description Provide functions to create hashed passwords (createHash) from a password and a salt (provided by createSalt) and to verify user authentication (verifyStoredPassword).
  * @exports {createSalt, createHash, verifyStoredPassword} moduleExports - The names are self explained.
  */
-const bcrypt = require('bcryptjs');
+const bcrypt = require('../bcryptjs');
 module.exports = {createSalt, createHash, verifyStoredPassword};
 
 /**

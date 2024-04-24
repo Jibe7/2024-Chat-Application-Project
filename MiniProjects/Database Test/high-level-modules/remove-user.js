@@ -4,7 +4,7 @@
  * It contains three functions : giveIDfromName, removeUserFromDatabaseWithID and removeUserFromDatabase which is built on top of the two others.
  * @exports {removeUserFromDatabase, giveIDfromName} moduleExports - 
  */
-const users = require('./users-db.js');
+const users = require('../low-level-modules/users-db.js');
 const co = require('./connect-db.js')
 module.exports = { removeUserFromDatabase, giveIDfromName };
 

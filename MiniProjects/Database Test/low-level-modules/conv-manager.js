@@ -3,12 +3,12 @@
  * @description Database interaction for conversations related tasks. 
  * Allow to create new conversations, get and update the list of authorized users. 
  * This module is not about managing messages inside a conversation but managing all of the different conversations.
- * Only few JS files should interact with the database using SQL queries, thus 'high-level' function should be implemented in other files/modules and rely on this 'low-level' one.
+ * Only few JS files should interact with the database using SQL queries, thus 'high-level' function should be implemented in other files/modules and rely on 'low-level' modules like this one.
  * @exports { createConversation, updateAuthorizedUsers, getAuthorizedUsers } moduleExports - 
  */
 
-const co = require('./connect-db.js');
-const date = require('dayjs');
+const co = require('../high-level-modules/connect-db');
+const date = require('../dayjs');
 
 module.exports = { createConversation, updateAuthorizedUsers, getAuthorizedUsers };
 
