@@ -14,6 +14,7 @@ const sessionConfig = {
       maxAge: 60000 * 60,
     } 
 };
+
 app.use(cookieParser('secret'));
 app.use(session(sessionConfig));
 app.use(express.static(path.join(__dirname, '../public')));
