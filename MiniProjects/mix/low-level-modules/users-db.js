@@ -162,14 +162,46 @@ async function getUserFromID(connection, user_id) { // TEST OK
   }
 ]
  */
-async function getAllFromUserName(connection, username) { // NOT TESTED
+async function getAllFromUserName(connection, username) { // TEST OK
     try {
-        const rows = await connection.execute(`SELECT * FROM user WHERE username = ${username}`);
+        const rows = await connection.execute(`SELECT * FROM user WHERE username = '${username}'`);
         return rows;
       } catch (error) {
         console.error(`Error fetching user ${username} with username:`, error);
       }
 }
+
+// co.connectToDatabase().then((connection => 
+//   users.getAllFromUserName(connection, "Metallica")
+//   .then(([usersData]) => {
+//       console.log(usersData)
+//       try {
+//           console.log("Type of userDataFromID: " +typeof(usersData))
+//           let obj = usersData[0];
+//           console.log("Type of userDataFromID[0]: " + typeof(obj))
+//           console.log(obj)
+//           console.log(obj.user_id)
+//           console.log(obj.username)
+//           console.log(obj.password)
+//           console.log(obj.profile_img)
+//           console.log(obj.conversations.authorized_list)
+//       } catch (e) {
+//           console.log(e);
+//           // co.closeConnection(connection);
+//           console.log("Error getting a property from the returned object.")
+//           throw e;
+//       }
+//   })
+//   .catch((e) => {
+//       console.log(e)
+//       console.log("Error Getting User from ID")
+//   })
+//   .finally(() => {
+//       co.closeConnection(connection);
+//       console.log("Connection Closed normally.")
+//   })
+//   ))
+//   .catch((e) => console.log(e))
 
 /**
  * 

@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
-// const register = require('../../Database Test/high-level-modules/add-user.js')
+const register = require('../high-level-modules/add-user')
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -43,10 +43,13 @@ app.post('/register', (request, response) => {
     console.log(request.body.password)
     console.log(request.sessionID)
     console.log("Hello")
-    // let result = register.AddUserToDatabase(request.body.username, request.body.password);
-    let result;
+    let result = register.AddUserToDatabase(request.body.username, request.body.password);
+    // let result;
     if (!result) {
         console.log("Fail user registration")
+        response.sendStatus(406);
+    } else {
+        response.sendStatus(201);
     }
 
 
